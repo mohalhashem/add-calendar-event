@@ -37,7 +37,7 @@ export function createEventURL(
         location,
         title,
         details,
-        eventUrl,
+        eventUrl
     }: {
         startDate: Date;
         endDate: Date;

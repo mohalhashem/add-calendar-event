@@ -2,10 +2,13 @@
   "compilerOptions": {
     "target": "esnext",
     "module": "esnext",
-    "moduleResolution": "node",
     "declaration": true,
     "outDir": "./lib",
-    "strict": true
+    "strict": true,
+    "baseUrl": ".",
+    "paths": {
+      "moment": ["node_modules/moment/ts3.1-typings/moment"]
+    }
   },
   "include": ["src"],
   "exclude": ["node_modules", "**/__tests__/*"]
