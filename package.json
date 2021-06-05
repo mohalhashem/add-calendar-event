@@ -1,6 +1,6 @@
 {
   "name": "add-calendar-event",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Add event to Calendar - TypeScript",
   "main": "index.js",
   "types": "lib/index.d.ts",
@@ -8,7 +8,11 @@
     "test": "jest --config jestconfig.json",
     "build": "tsc"
   },
-  "keywords": ["typescript", "calendar", "event"],
+  "keywords": [
+    "typescript",
+    "calendar",
+    "event"
+  ],
   "author": "Mohammed Alhashem",
   "repository": {
     "type": "git",
