@@ -1,5 +1,5 @@
 {
-  "name": "add-event-to-calendar",
+  "name": "@types/add-event-to-calendar",
   "version": "0.0.1",
   "description": "Add event to Calendar - TypeScript",
   "main": "index.js",
