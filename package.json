@@ -12,7 +12,7 @@
   "author": "Mohammed Alhashem",
   "repository": {
     "type": "git",
-    "url": "https://mohalhashem@github.com/mohalhashem/add-to-calendar.git"
+    "url": "https://mohalhashem@github.com/mohalhashem/add-calendar-event.git"
   },
   "license": "ISC",
   "devDependencies": {
