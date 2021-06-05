@@ -1,5 +1,5 @@
 {
-  "name": "add-to-calendar",
+  "name": "@bloxo/add-to-calendar",
   "version": "0.0.0",
   "description": "Add event to Calendar - TypeScript",
   "main": "index.js",
