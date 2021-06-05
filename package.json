@@ -6,13 +6,15 @@
   "types": "lib/index.d.ts",
   "scripts": {
     "test": "jest --config jestconfig.json",
-    "build": "tsc"
+    "build": "tsc",
+    "publish": "tsc && np"
   },
   "keywords": [
     "typescript",
     "calendar",
     "event"
   ],
+  "files": ["lib/**/*"],
   "author": "Mohammed Alhashem",
   "repository": {
     "type": "git",
