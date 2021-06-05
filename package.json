@@ -1,5 +1,5 @@
 {
-  "name": "@bloxo/add-to-calendar",
+  "name": "add-calendar-event",
   "version": "0.0.0",
   "description": "Add event to Calendar - TypeScript",
   "main": "index.js",
@@ -9,7 +9,11 @@
     "build": "tsc"
   },
   "keywords": [],
-  "author": "",
+  "author": "Mohammed Alhashem",
+  "repository": {
+    "type": "git",
+    "url": "https://mohalhashem@github.com/mohalhashem/add-to-calendar.git"
+  },
   "license": "ISC",
   "devDependencies": {
     "@types/jest": "^26.0.23",
