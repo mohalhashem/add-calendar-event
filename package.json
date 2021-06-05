@@ -8,7 +8,7 @@
     "test": "jest --config jestconfig.json",
     "build": "tsc"
   },
-  "keywords": [],
+  "keywords": ["typescript", "calendar", "event"],
   "author": "Mohammed Alhashem",
   "repository": {
     "type": "git",
