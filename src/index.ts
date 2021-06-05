@@ -1,5 +1,5 @@
-import moment from 'moment';
-import qs from "qs";
+import * as moment from 'moment';
+import * as qs from "qs";
 
 export enum CalendarType {
     ICS, // Apple and Outlook
@@ -8,7 +8,7 @@ export enum CalendarType {
     YAHOO
 }
 
-function getRandomKey() {
+function randomId() {
     let n = Math.floor(Math.random() * 999999999999).toString();
     return new Date().getTime().toString() + "" + n;
 }
@@ -19,15 +19,14 @@ function dateFormatter(date: Date) {
 }
 
 function calculateDuration(startTime: Date, endTime: Date) {
-    let end = moment.utc(endTime).format("DD/MM/YYYY HH:mm:ss");
-    let start = moment.utc(startTime).format("DD/MM/YYYY HH:mm:ss");
+    const end = moment.utc(endTime).format("DD/MM/YYYY HH:mm:ss");
+    const start = moment.utc(startTime).format("DD/MM/YYYY HH:mm:ss");
 
-    let difference = moment(end, "DD/MM/YYYY HH:mm:ss").diff(
-      moment(start, "DD/MM/YYYY HH:mm:ss")
+    const difference = moment(end, "DD/MM/YYYY HH:mm:ss").diff(
+        moment(start, "DD/MM/YYYY HH:mm:ss")
     );
 
-    let duration = moment.duration(difference);
-    return Math.floor(duration.asHours()) + moment.utc(difference).format(":mm");
+    return Math.floor(moment.duration(difference).asHours()) + moment.utc(difference).format(":mm");
 }
 
 
@@ -56,7 +55,7 @@ export function createEventURL(
             return `https://calendar.google.com/calendar/render?${qs.stringify(
                 {
                     action: 'TEMPLATE',
-                    dates: `${start}/${end}`,
+                    dates: start + '/' + end,
                     location,
                     text: title,
                     details,
@@ -73,7 +72,7 @@ export function createEventURL(
                     location,
                     body: details,
                     allday: false,
-                    uid: getRandomKey(),
+                    uid: randomId(),
                     path: '/calendar/view/Month',
                 }
             )}`
