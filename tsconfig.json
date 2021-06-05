@@ -3,13 +3,10 @@
     "target": "esnext",
     "module": "esnext",
     "moduleResolution": "node",
-    "jsx": "preserve",
-    "baseUrl": "./",
-    "noEmit": true,
     "declaration": true,
     "outDir": "./lib",
     "strict": true
   },
-  "include": ["src", "types"],
+  "include": ["src"],
   "exclude": ["node_modules", "**/__tests__/*"]
 }

@@ -29,7 +29,6 @@ function calculateDuration(startTime: Date, endTime: Date) {
     return Math.floor(moment.duration(difference).asHours()) + moment.utc(difference).format(":mm");
 }
 
-
 export function createEventURL(
     type: CalendarType, 
 	{
