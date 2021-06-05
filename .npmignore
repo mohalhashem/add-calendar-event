@@ -1,2 +1,4 @@
+tsconfig.json
+jestconfig.json
 node_modules
-/src
+src
