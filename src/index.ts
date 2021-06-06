@@ -1,5 +1,5 @@
-import * as moment from 'moment';
-import * as qs from "qs";
+import moment from "moment";
+import qs from "qs";
 
 export enum CalendarType {
     ICS, // Apple and Outlook
@@ -48,7 +48,8 @@ export function createEventURL(
     }
 ) {
 	const start: string = dateFormatter(startDate);
-	const end: string = dateFormatter(endDate);
+    const end: string = dateFormatter(endDate);
+
     switch(type) {
         case CalendarType.GOOGLE: {
             return `https://calendar.google.com/calendar/render?${qs.stringify(
