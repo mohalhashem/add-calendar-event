@@ -1,6 +1,6 @@
 {
   "name": "add-calendar-event",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "description": "Add event to Calendar - TypeScript",
   "main": "index.js",
   "types": "lib/index.d.ts",
