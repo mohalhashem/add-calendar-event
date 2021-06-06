@@ -1,14 +1,23 @@
 {
   "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "add-calendar-event": ["./src/index"]
+    },
+    "allowUnreachableCode": false,
+    "allowUnusedLabels": false,
+    "esModuleInterop": true,
+    "importsNotUsedAsValues": "error",
+    "forceConsistentCasingInFileNames": true,
+    "lib": ["ES6"],
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
     "target": "esnext",
-    "module": "esnext",
     "declaration": true,
     "outDir": "./lib",
     "strict": true,
-    "baseUrl": ".",
-    "paths": {
-      "moment": ["node_modules/moment/ts3.1-typings/moment"]
-    }
+    "allowSyntheticDefaultImports": true
   },
   "include": ["src"],
   "exclude": ["node_modules", "**/__tests__/*"]
