@@ -1,13 +1,6 @@
 import moment from "moment";
 import qs from "qs";
 
-export enum CalendarType {
-    ICS, // Apple and Outlook
-    GOOGLE,
-    OUTLOOKCOM,
-    YAHOO
-}
-
 function randomId() {
     let n = Math.floor(Math.random() * 999999999999).toString();
     return new Date().getTime().toString() + "" + n;
@@ -30,7 +23,7 @@ function calculateDuration(startTime: Date, endTime: Date) {
 }
 
 export function createEventURL(
-    type: CalendarType, 
+    type: 'ICS' | 'GOOGLE' | 'OUTLOOKCOM' | 'YAHOO', 
 	{
         startDate,
         endDate,
@@ -51,7 +44,7 @@ export function createEventURL(
     const end: string = dateFormatter(endDate);
 
     switch(type) {
-        case CalendarType.GOOGLE: {
+        case 'GOOGLE': {
             return `https://calendar.google.com/calendar/render?${qs.stringify(
                 {
                     action: 'TEMPLATE',
@@ -62,7 +55,7 @@ export function createEventURL(
                 }
             )}`
         }
-        case CalendarType.OUTLOOKCOM: {
+        case 'OUTLOOKCOM': {
             return `https://outlook.live.com/owa/?${qs.stringify(
                 {
                     rru: 'addevent',
@@ -77,7 +70,7 @@ export function createEventURL(
                 }
             )}`
         }
-        case CalendarType.YAHOO: {
+        case 'YAHOO': {
             return `https://calendar.yahoo.com/?${qs.stringify(
                 {
                     v: 60,
@@ -91,7 +84,7 @@ export function createEventURL(
                 }
             )}`
         }
-        case CalendarType.ICS: {
+        case 'ICS': {
             return [
                 "BEGIN:VCALENDAR",
                 "VERSION:2.0",

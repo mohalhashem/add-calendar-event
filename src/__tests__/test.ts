@@ -3,7 +3,7 @@ import { createEventURL, CalendarType } from '../index';
 
 test('Get Google Event URL', () => {
     const url = createEventURL(
-                    CalendarType.GOOGLE,
+                    'GOOGLE',
                     {
                         startDate: new Date(),
                         endDate: new Date(),
@@ -18,7 +18,7 @@ test('Get Google Event URL', () => {
 
 test('Get outlook.com Event URL', () => {
     const url = createEventURL(
-                    CalendarType.OUTLOOKCOM,
+                    'OUTLOOKCOM',
                     {
                         startDate: new Date(),
                         endDate: new Date(),
@@ -33,7 +33,7 @@ test('Get outlook.com Event URL', () => {
 
 test('Get yahoo Event URL', () => {
     const url = createEventURL(
-                    CalendarType.YAHOO,
+                    'YAHOO',
                     {
                         startDate: new Date(),
                         endDate: new Date(),
@@ -48,7 +48,7 @@ test('Get yahoo Event URL', () => {
 
 test('Get ics file', () => {
     const url = createEventURL(
-                    CalendarType.ICS,
+                    'ICS',
                     {
                         startDate: new Date(),
                         endDate: new Date(),
