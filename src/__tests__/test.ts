@@ -1,4 +1,4 @@
-import { createEventURL, CalendarType } from '../index';
+import { createEventURL } from '../index';
 
 
 test('Get Google Event URL', () => {
