@@ -14,7 +14,9 @@
     "calendar",
     "event"
   ],
-  "files": ["lib/**/*"],
+  "files": [
+    "lib/**/*"
+  ],
   "author": "Mohammed Alhashem",
   "repository": {
     "type": "git",
@@ -29,6 +31,5 @@
     "qs": "^6.10.1",
     "ts-jest": "^27.0.2",
     "typescript": "^4.3.2"
-  },
-  "dependencies": {}
+  }
 }
