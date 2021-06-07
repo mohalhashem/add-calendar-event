@@ -2,7 +2,7 @@
   "name": "add-calendar-event",
   "version": "0.0.6",
   "description": "Add event to Calendar - TypeScript",
-  "main": "index.js",
+  "main": "lib/index.js",
   "types": "lib/index.d.ts",
   "scripts": {
     "test": "jest --config jestconfig.json",
